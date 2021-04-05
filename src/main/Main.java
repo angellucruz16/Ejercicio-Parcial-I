@@ -60,7 +60,7 @@ public class Main extends PApplet {
 					String[] caracteristicas = split(mensaje,",");
 					
 					System.out.println(mensaje);
-					//listaRecordatorios.add(new Recordatorio(Integer.parseInt(caracteristicas[0]), Integer.parseInt(caracteristicas[1]), caracteristicas[2], caracteristicas[3], this)); 
+
 					if (mensaje.equals("finalizar")) {
 						listaRecordatorios.add(vistaPrevia);
 						vistaPrevia = null;
@@ -83,7 +83,7 @@ public class Main extends PApplet {
 		background(255,255,255);
 		if (vistaPrevia != null) {
 		vistaPrevia.pintar();
-		//System.out.println(men);
+		
 		}
 		for (int i = 0; i < listaRecordatorios.size(); i++) {
 			listaRecordatorios.get(i).pintar();
